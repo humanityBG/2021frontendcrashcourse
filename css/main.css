@@ -1,6 +1,145 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-:root {
-  --primary-color: #007af3;
+/* http://meyerweb.com/eric/tools/css/reset/
+   v5.0.2 | 20191019
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+}
+
+menu,
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 body {
@@ -10,17 +149,17 @@ body {
 }
 
 .navbar {
-  background: white;
+  background: #f3f3f3;
   padding: 1em;
 }
 .navbar .logo {
   text-decoration: none;
   font-weight: bold;
-  color: black;
+  color: #111111;
   font-size: 1.2em;
 }
 .navbar .logo span {
-  color: var(--primary-color);
+  color: #00a4d6;
 }
 .navbar nav {
   display: none;
@@ -54,7 +193,7 @@ section {
 .left-col .subhead {
   text-transform: uppercase;
   font-weight: bold;
-  color: gray;
+  color: #bdc3c7;
   letter-spacing: 0.3em;
 }
 .left-col h1 {
@@ -63,8 +202,8 @@ section {
   margin-top: 0.2em;
 }
 .left-col .primary-cta {
-  background: var(--primary-color);
-  color: white;
+  background: #00a4d6;
+  color: #f3f3f3;
   text-decoration: none;
   padding: 0.6em 1.3em;
   font-size: 1.4em;
@@ -86,8 +225,8 @@ section {
 }
 
 section.features-section {
-  background: #20272e;
-  color: white;
+  background: #444444;
+  color: #f3f3f3;
 }
 
 ul.features-list {
@@ -118,11 +257,11 @@ ul.features-list li:before {
 }
 
 .testimonials-section {
-  background: var(--primary-color);
-  color: white;
+  background: #00a4d6;
+  color: #f3f3f3;
 }
 .testimonials-section li {
-  background: #006bd6;
+  background: #1499f1;
   text-align: center;
   padding: 2em 1em;
   width: 80%;
@@ -132,7 +271,7 @@ ul.features-list li:before {
 .testimonials-section li img {
   width: 5em;
   height: 5em;
-  border: 5px solid #006bd6;
+  border: 5px solid #1499f1;
   border-radius: 50%;
   margin-top: -4.5em;
 }
@@ -153,13 +292,13 @@ textarea {
   padding: 0.8em;
   margin-bottom: 1em;
   border-radius: 0.3em;
-  border: 1px solid gray;
+  border: 1px solid #bdc3c7;
   box-sizing: border-box;
 }
 
 input[type=submit] {
-  background-color: var(--primary-color);
-  color: white;
+  background-color: #00a4d6;
+  color: #f3f3f3;
   font-weight: bold;
   font-size: 1.3em;
   border: none;
@@ -194,7 +333,7 @@ nav ul.primary-nav {
   margin-top: 5em;
 }
 nav li a {
-  color: white;
+  color: #f3f3f3;
   text-decoration: none;
   display: block;
   padding: 0.5em;
@@ -234,7 +373,7 @@ nav li a:hover {
     display: flex;
   }
   .navbar nav a {
-    color: black;
+    color: #111111;
     font-size: 1em;
     padding: 0.1em 1em;
   }
@@ -245,15 +384,15 @@ nav li a:hover {
     font-weight: bold;
   }
   .navbar nav li.go-premium-cta a {
-    color: var(--primary-color);
-    border: 3px solid var(--primary-color);
+    color: #00a4d6;
+    border: 3px solid #00a4d6;
     font-weight: bold;
     border-radius: 5em;
     margin-top: -0.2em;
   }
   .navbar nav li.go-premium-cta a:hover {
-    background: var(--primary-color);
-    color: white;
+    background: #00a4d6;
+    color: #f3f3f3;
   }
 }
 @media only screen and (min-width: 1080px) {
@@ -336,7 +475,7 @@ nav li a:hover {
     position: absolute;
     width: 10%;
     height: 20em;
-    background: var(--primary-color);
+    background: #00a4d6;
     left: 0;
     top: -4em;
   }
