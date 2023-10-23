@@ -1,27 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
-:root {
-  --primary-color: #007af3;
-}
+@import "../css/variables.scss";
+@import "../css/_reset.scss";
 
 body {
-  background: #f2f2f2;
+  background: $bg-color;
   margin: 0;
   font-family: "Poppins";
 }
 
 .navbar {
-  background: white;
+  background: $white;
   padding: 1em;
 
   .logo {
     text-decoration: none;
     font-weight: bold;
-    color: black;
+    color: $black;
     font-size: 1.2em;
 
     span {
-      color: var(--primary-color);
+      color: $primary-color;
     }
   }
 
@@ -40,7 +39,7 @@ body {
 }
 
 a {
-  color: #444444;
+  color: $features-color;
 }
 
 ul {
@@ -61,7 +60,7 @@ section {
   .subhead {
     text-transform: uppercase;
     font-weight: bold;
-    color: gray;
+    color: $gray;
     letter-spacing: 0.3em;
   }
 
@@ -72,8 +71,8 @@ section {
   }
 
   .primary-cta {
-    background: var(--primary-color);
-    color: white;
+    background: $primary-color;
+    color: $white;
     text-decoration: none;
     padding: 0.6em 1.3em;
     font-size: 1.4em;
@@ -98,8 +97,8 @@ section {
 }
 
 section.features-section {
-  background: #20272e;
-  color: white;
+  background: $features-color;
+  color: $white;
 }
 
 ul.features-list {
@@ -132,11 +131,11 @@ ul.features-list {
 }
 
 .testimonials-section {
-  background: var(--primary-color);
-  color: white;
+  background: $primary-color;
+  color: $white;
 
   li {
-    background: #006bd6;
+    background: $testimonials-color;
     text-align: center;
     padding: 2em 1em;
     width: 80%;
@@ -146,7 +145,7 @@ ul.features-list {
     img {
       width: 5em;
       height: 5em;
-      border: 5px solid #006bd6;
+      border: 5px solid $testimonials-color;
       border-radius: 50%;
       margin-top: -4.5em;
     }
@@ -169,13 +168,13 @@ textarea {
   padding: 0.8em;
   margin-bottom: 1em;
   border-radius: 0.3em;
-  border: 1px solid gray;
+  border: 1px solid $gray;
   box-sizing: border-box;
 }
 
 input[type="submit"] {
-  background-color: var(--primary-color);
-  color: white;
+  background-color: $primary-color;
+  color: $white;
   font-weight: bold;
   font-size: 1.3em;
   border: none;
@@ -202,7 +201,7 @@ nav {
   width: 66%;
   right: 0;
   top: 0;
-  background: #20272e;
+  background: $nav-color;
   height: 100vh;
   padding: 1em;
 
@@ -212,7 +211,7 @@ nav {
 
   li {
     a {
-      color: white;
+      color: $white;
       text-decoration: none;
       display: block;
       padding: 0.5em;
@@ -258,7 +257,7 @@ nav {
     }
 
     a {
-      color: black;
+      color: $black;
       font-size: 1em;
       padding: 0.1em 1em;
     }
@@ -271,15 +270,15 @@ nav {
       font-weight: bold;
     }
     li.go-premium-cta a {
-      color: var(--primary-color);
-      border: 3px solid var(--primary-color);
+      color: $primary-color;
+      border: 3px solid $primary-color;
       font-weight: bold;
       border-radius: 5em;
       margin-top: -0.2em;
 
       &:hover {
-        background: var(--primary-color);
-        color: white;
+        background: $primary-color;
+        color: $white;
       }
     }
   }
@@ -384,7 +383,7 @@ nav {
       position: absolute;
       width: 10%;
       height: 20em;
-      background: var(--primary-color);
+      background: $primary-color;
       left: 0;
       top: -4em;
     }
