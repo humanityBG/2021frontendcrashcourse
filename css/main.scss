@@ -10,7 +10,7 @@ body {
 }
 
 .navbar {
-  background: white;
+  background: $pure-white;
   padding: 1em;
 
   .logo {
@@ -79,6 +79,10 @@ section {
     border-radius: 5em;
     font-weight: bold;
     display: inline-block;
+
+    &:hover {
+      box-shadow: $box-shadow-btns;
+    }
   }
 
   .watch-video-cta {
@@ -184,6 +188,10 @@ input[type="submit"] {
   padding: 0.8em 2em;
   width: unset;
   cursor: pointer;
+
+  &:hover {
+    box-shadow: $box-shadow-btns;
+  }
 }
 
 iframe {
@@ -279,6 +287,7 @@ nav {
       &:hover {
         background: $primary-color;
         color: $white;
+        box-shadow: $box-shadow-btns;
       }
     }
   }
