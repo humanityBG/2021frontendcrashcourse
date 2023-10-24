@@ -200,6 +200,7 @@ section {
   font-size: 2.5em;
   line-height: 1.3em;
   margin-top: 0.2em;
+  font-weight: bold;
 }
 .left-col .primary-cta {
   background: #00a4d6;
@@ -289,6 +290,10 @@ label {
   margin-bottom: 0.5em;
 }
 
+.contact-form {
+  margin-bottom: 16px;
+}
+
 input,
 textarea {
   width: 100%;
@@ -299,7 +304,7 @@ textarea {
   box-sizing: border-box;
 }
 
-input[type="submit"] {
+input[type=submit] {
   background-color: #00a4d6;
   color: #f3f3f3;
   font-weight: bold;
@@ -312,7 +317,7 @@ input[type="submit"] {
   width: unset;
   cursor: pointer;
 }
-input[type="submit"]:hover {
+input[type=submit]:hover {
   box-shadow: 4px 4px 15px rgba(17, 17, 17, 0.418);
 }
 
@@ -495,4 +500,4 @@ nav li a:hover {
     left: 4.5em;
     top: 2em;
   }
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
