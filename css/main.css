@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import "material-icons/iconfont/material-icons.css";
 /* http://meyerweb.com/eric/tools/css/reset/
    v5.0.2 | 20191019
    License: none (public domain)
@@ -216,11 +217,17 @@ section {
   box-shadow: 4px 4px 15px rgba(17, 17, 17, 0.418);
 }
 .left-col .watch-video-cta {
-  display: block;
+  display: inline-block;
   margin-top: 1em;
 }
-.left-col .watch-video-cta img {
+.left-col .watch-video-cta:before {
+  content: "\e04b";
+  font-family: "Material Icons";
+  font-size: 1.2em;
+  color: #111111;
   margin-right: 0.5em;
+  margin-left: 0.2em;
+  vertical-align: middle;
 }
 
 .hero-img {
@@ -246,14 +253,15 @@ ul.features-list li {
   position: relative;
 }
 ul.features-list li:before {
-  content: "";
+  content: "\e2e6";
+  font-family: "Material Icons";
+  color: #1fc51e;
+  font-size: 1.2em;
   left: -2em;
   position: absolute;
   width: 20px;
   height: 20px;
-  background-image: url("https://assets.codepen.io/2621168/bullet.svg");
-  background-size: contain;
-  margin-right: 0.5em;
+  margin-right: 0.2em;
 }
 
 .features-section img {
@@ -304,7 +312,7 @@ textarea {
   box-sizing: border-box;
 }
 
-input[type="submit"] {
+input[type=submit] {
   background-color: #00a4d6;
   color: #f3f3f3;
   font-weight: bold;
@@ -317,7 +325,7 @@ input[type="submit"] {
   width: unset;
   cursor: pointer;
 }
-input[type="submit"]:hover {
+input[type=submit]:hover {
   box-shadow: 4px 4px 15px rgba(17, 17, 17, 0.418);
 }
 
@@ -500,4 +508,4 @@ nav li a:hover {
     left: 4.5em;
     top: 2em;
   }
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

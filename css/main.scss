@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-
+@import "material-icons/iconfont/material-icons.css";
 @import "../css/variables.scss";
 @import "../css/_reset.scss";
 
@@ -80,6 +80,7 @@ section {
     border-radius: 5em;
     font-weight: bold;
     display: inline-block;
+    //margin-right: 3em;
 
     &:hover {
       box-shadow: $box-shadow-btns;
@@ -87,11 +88,17 @@ section {
   }
 
   .watch-video-cta {
-    display: block;
+    display: inline-block;
     margin-top: 1em;
 
-    img {
+    &:before {
+      content: $watch-movie-icon;
+      font-family: "Material Icons";
+      font-size: 1.2em;
+      color: $black;
       margin-right: 0.5em;
+      margin-left: 0.2em;
+      vertical-align: middle;
     }
   }
 }
@@ -119,14 +126,15 @@ ul.features-list {
     position: relative;
 
     &:before {
-      content: "";
+      content: $icon-bullet;
+      font-family: "Material Icons";
+      color: $icon-bullet-color;
+      font-size: 1.2em;
       left: -2em;
       position: absolute;
       width: 20px;
       height: 20px;
-      background-image: url("https://assets.codepen.io/2621168/bullet.svg");
-      background-size: contain;
-      margin-right: 0.5em;
+      margin-right: 0.2em;
     }
   }
 }
